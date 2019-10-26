@@ -1,14 +1,26 @@
 package com.example.gymfitness;
 
 
+<<<<<<< HEAD
 import android.app.DatePickerDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
+=======
+import android.app.Activity;
+import android.app.DatePickerDialog;
+import android.content.ContentValues;
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteOpenHelper;
+>>>>>>> 80d37b9733323f62268fa0f9804d1e96ef681e5e
 import android.os.Bundle;
 import android.support.design.widget.TextInputEditText;
 import android.support.design.widget.TextInputLayout;
 import android.support.v4.app.Fragment;
+<<<<<<< HEAD
+=======
+import android.support.v4.app.FragmentActivity;
+>>>>>>> 80d37b9733323f62268fa0f9804d1e96ef681e5e
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -23,6 +35,7 @@ import java.util.Calendar;
 public class register3 extends Fragment {
 
     Calendar calendario = Calendar.getInstance();
+<<<<<<< HEAD
     final int anio = calendario.get(Calendar.YEAR);
     final int mes = calendario.get(Calendar.MONTH);
     final int dia = calendario.get(Calendar.DAY_OF_MONTH);
@@ -30,11 +43,31 @@ public class register3 extends Fragment {
     private RadioButton rb2;
     private TextInputEditText fechaNacimiento;
 
+=======
+    final  int anio = calendario.get(Calendar.YEAR);
+    final  int mes = calendario.get(Calendar.MONTH);
+    final  int dia = calendario.get(Calendar.DAY_OF_MONTH);
+    private RadioButton rb1;
+    private RadioButton rb2;
+    TextInputEditText fechaNacimiento;
+    private String sexo = "";
+    private String Femenino = "F";
+    private  String Masculino = "M";
+    private String fechaNac = "";
+>>>>>>> 80d37b9733323f62268fa0f9804d1e96ef681e5e
 
     public register3() {
         // Required empty public constructor
     }
 
+<<<<<<< HEAD
+=======
+    @Override
+    public void onAttach(Activity activity) {
+        super.onAttach(activity);
+
+    }
+>>>>>>> 80d37b9733323f62268fa0f9804d1e96ef681e5e
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -69,11 +102,22 @@ public class register3 extends Fragment {
         //sexo
         rb1 = (RadioButton)vista.findViewById(R.id.radioButton3);
         rb2 = (RadioButton)vista.findViewById(R.id.radioButton4);
+<<<<<<< HEAD
+=======
+
+>>>>>>> 80d37b9733323f62268fa0f9804d1e96ef681e5e
         final TextView text = (TextView)vista.findViewById(R.id.textView13);
 
         //boton
         Button aceptar = (Button)vista.findViewById(R.id.button2);
         aceptar.setOnClickListener(new View.OnClickListener() {
+<<<<<<< HEAD
+=======
+
+
+
+
+>>>>>>> 80d37b9733323f62268fa0f9804d1e96ef681e5e
             @Override
             public void onClick(View v) {
                 if(fechaNacimiento.getText().toString().trim().equals("")){
@@ -83,6 +127,7 @@ public class register3 extends Fragment {
                     text.setError("Favor de seleccionar un sexo.");
                 }
                 else{
+<<<<<<< HEAD
 
 
                     //Le pasamos a la clase registroDB los valores obtenidos en todos los fragments.
@@ -100,6 +145,57 @@ public class register3 extends Fragment {
 
                 }
 
+=======
+                    fechaNac = fechaNacimiento.getText().toString();
+                    if(rb1.isChecked()){
+                        sexo = Femenino;
+                    }
+                    else{
+                        sexo = Masculino;
+                    }
+
+
+                    //Recuperamos todos los datos enviados por el fragment anterior
+                    Bundle bundle = getArguments();
+                    String usuario = bundle.getString("usuario");
+                    String password = bundle.getString("password");
+                    String nombre = bundle.getString("nombre");
+                    String apellidoM = bundle.getString("apellidom");
+                    String apellidoP = bundle.getString("apellidop");
+                    String fechaNacimiento = fechaNac;
+
+                    //llamamos a la configuracion para obtener la version y el nombre de esta (DB)
+
+                    configuracionDB configuracionDB = new configuracionDB();
+                    dbHelper dbHelper = new dbHelper(getActivity(),configuracionDB.DATABASE_NAME,null,configuracionDB.DATABASE_VERSION);
+                    SQLiteDatabase DB = dbHelper.getWritableDatabase();
+
+
+
+                   if(DB!=null){
+                        configuracionDB.registro registro = new configuracionDB.registro() ;
+                        ContentValues valores = new ContentValues();
+                        valores.put(registro.COLUMN_NAME_USUARIO,usuario);
+                        valores.put(registro.COLUMN_NAME_PASSWORD,password);
+                        valores.put(registro.COLUMN_NAME_NOMBRE,nombre);
+                        valores.put(registro.COLUMN_NAME_APELLIDOP,apellidoP);
+                        valores.put(registro.COLUMN_NAME_APELLIDOM,apellidoM);
+                        valores.put(registro.COLUMN_NAME_FECHA_NACIMIENTO,fechaNacimiento);
+                        valores.put(registro.COLUMN_NAME_GENERO,sexo);
+                        valores.put(registro.COLUMN_NAME_FECHA_INGRESO,"aun no configurada");
+                        long i = DB.insert("tblRegistro",null,valores);
+                        if(i>0){
+                            Toast.makeText(vista.getContext(),"Registro completado",Toast.LENGTH_LONG).show();
+                        }
+                        else{
+                            Toast.makeText(vista.getContext(),"Ha ocurrido un error al insertar.",Toast.LENGTH_LONG).show();
+                        }
+                    }
+
+
+
+                }
+>>>>>>> 80d37b9733323f62268fa0f9804d1e96ef681e5e
             }
         });
 
@@ -111,8 +207,16 @@ public class register3 extends Fragment {
         return vista;
     }
 
+<<<<<<< HEAD
 
 
+=======
+    @Override
+    public void onActivityCreated(Bundle savedInstanceState) {
+
+        super.onActivityCreated(savedInstanceState);
+    }
+>>>>>>> 80d37b9733323f62268fa0f9804d1e96ef681e5e
 
 
         public void obtenerFecha(View vista){

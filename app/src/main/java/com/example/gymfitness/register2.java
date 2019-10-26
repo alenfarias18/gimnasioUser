@@ -58,9 +58,35 @@ public class register2 extends Fragment {
                     apellidoM.setError("Favor de rellenar con un apellido materno valido.");
                 }
                 else{
+
                     Fragment fragment2 = new register3();
                     FragmentManager miManejador = getFragmentManager();
                     FragmentTransaction miTransaccion  = miManejador.beginTransaction();
+
+
+                    //Recuperamos los datos del fragment anterior
+                    Bundle datosFragment1 = getArguments();
+                    String usuario = datosFragment1.getString("usuario");
+                    String password = datosFragment1.getString("password");
+
+
+                    //Cargamos el bundle con los datos de este fragment y los obtenidos anteriormente al siguiente fragment.
+                    Bundle bundle = new Bundle();
+                    bundle.putString("usuario",usuario);
+                    bundle.putString("passoword",password);
+                    bundle.putString("nombre",nombre.getText().toString());
+                    bundle.putString("apellidop",apellidoP.getText().toString());
+                    bundle.putString("apellidom",apellidoM.getText().toString());
+
+
+
+                     fragment2 = new register3();
+                     miManejador = getFragmentManager();
+                     miTransaccion  = miManejador.beginTransaction();
+                    //Enviamos los datos al siguiente fragment.
+                    fragment2.setArguments(bundle);
+
+                    //cambiamos al siguiente fragment
 
                     miTransaccion.replace(R.id.idFragmentModifica,fragment2);
 
