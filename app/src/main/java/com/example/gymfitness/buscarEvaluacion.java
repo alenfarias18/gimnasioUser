@@ -2,8 +2,11 @@ package com.example.gymfitness;
 
 
 import android.app.DatePickerDialog;
+<<<<<<< HEAD
 import android.content.Intent;
 import android.content.SharedPreferences;
+=======
+>>>>>>> 69a165b919189b08b045645f5f1144351088c78a
 import android.os.Bundle;
 import android.support.design.widget.TextInputEditText;
 import android.support.v4.app.Fragment;
@@ -13,6 +16,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.*;
+<<<<<<< HEAD
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
@@ -24,6 +28,9 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
+=======
+
+>>>>>>> 69a165b919189b08b045645f5f1144351088c78a
 import java.util.Calendar;
 
 
@@ -37,11 +44,15 @@ Calendar calendario = Calendar.getInstance();
 final int anio = calendario.get(Calendar.YEAR);
 final int mes = calendario.get(Calendar.MONTH);
 final int dia = calendario.get(Calendar.DAY_OF_MONTH);
+<<<<<<< HEAD
     private RequestQueue requestQueQue;
     private String url;
     private  ListView list;
     private String usuario;
     private String fecha,peso,estatura,medidaCintura,imc,indiceGrasa,grasaInstrumento;
+=======
+
+>>>>>>> 69a165b919189b08b045645f5f1144351088c78a
     public buscarEvaluacion() {
         // Required empty public constructor
     }
@@ -52,7 +63,11 @@ final int dia = calendario.get(Calendar.DAY_OF_MONTH);
                              Bundle savedInstanceState) {
         final View view =inflater.inflate(R.layout.fragment_buscar_evaluacion, container, false);
 
+<<<<<<< HEAD
         list = (ListView)view.findViewById(R.id.ListViewEliminar2);
+=======
+
+>>>>>>> 69a165b919189b08b045645f5f1144351088c78a
 
         //Desde
         desde = (TextInputEditText) view.findViewById(R.id.desde);
@@ -88,6 +103,7 @@ final int dia = calendario.get(Calendar.DAY_OF_MONTH);
                     hasta.setError("Favor de ingresar una fecha de termino.");
                 }
                 else{
+<<<<<<< HEAD
                     SharedPreferences sharedPreferences = getActivity().getSharedPreferences(MainActivity.varGlobal, getActivity().MODE_PRIVATE);
                     usuario = sharedPreferences.getString("usuario", "");
                      cargarDatos(view,usuario);
@@ -106,6 +122,15 @@ final int dia = calendario.get(Calendar.DAY_OF_MONTH);
                             startActivity(intent);
                         }
                     });
+=======
+                    Fragment fragment2 = new visualizarEvaluacion();
+                    FragmentManager miManejador = getFragmentManager();
+                    FragmentTransaction miTransaccion  = miManejador.beginTransaction();
+
+                    miTransaccion.replace(R.id.IDFragmentAdd,fragment2,"1");
+
+                    miTransaccion.commit();
+>>>>>>> 69a165b919189b08b045645f5f1144351088c78a
                 }
             }
         });
@@ -132,6 +157,7 @@ final int dia = calendario.get(Calendar.DAY_OF_MONTH);
     }
 
 
+<<<<<<< HEAD
     private void cargarDatos(final View view,String usuario){
 
         requestQueQue = Volley.newRequestQueue(view.getContext());
@@ -179,4 +205,6 @@ final int dia = calendario.get(Calendar.DAY_OF_MONTH);
     }
 
 
+=======
+>>>>>>> 69a165b919189b08b045645f5f1144351088c78a
 }

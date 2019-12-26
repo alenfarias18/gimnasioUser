@@ -83,7 +83,12 @@ public class registro extends AppCompatActivity {
         if(db!=null){
             ContentValues contentValues = new ContentValues();
             contentValues.put(clave,valor);
+<<<<<<< HEAD
             db.insert(configurationDB.genero.TABLE_NAME,null,contentValues);
+=======
+            long  x = db.insert(configurationDB.genero.TABLE_NAME,null,contentValues);
+            Toast.makeText(this,""+x,Toast.LENGTH_SHORT).show();
+>>>>>>> 69a165b919189b08b045645f5f1144351088c78a
             db.close();
         }
     }

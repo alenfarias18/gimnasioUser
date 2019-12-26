@@ -85,7 +85,11 @@
                 app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="16dp"
                 android:layout_marginStart="16dp" app:layout_constraintVertical_bias="0.0"
                 android:background="@color/colorPrimary" android:textColor="@color/textIcons"
+<<<<<<< HEAD
                 android:fontFamily="@font/roboto" android:onClick="none"/>
+=======
+                android:fontFamily="@font/roboto" android:onClick="verificaInput"/>
+>>>>>>> 69a165b919189b08b045645f5f1144351088c78a
         <ImageView
                 android:layout_width="278dp"
                 android:layout_height="10dp" app:srcCompat="@drawable/separador"

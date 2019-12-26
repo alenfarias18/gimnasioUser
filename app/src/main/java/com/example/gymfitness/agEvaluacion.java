@@ -1,7 +1,10 @@
 package com.example.gymfitness;
 
 
+<<<<<<< HEAD
 import android.content.SharedPreferences;
+=======
+>>>>>>> 69a165b919189b08b045645f5f1144351088c78a
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
@@ -10,17 +13,24 @@ import android.os.Bundle;
 
 public class agEvaluacion extends AppCompatActivity implements ComunicaButton{
 private int fragment = -1;
+<<<<<<< HEAD
 private String usuario;
+=======
+
+>>>>>>> 69a165b919189b08b045645f5f1144351088c78a
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ag_evaluacion);
+<<<<<<< HEAD
 
 
         SharedPreferences sharedPreferences = getSharedPreferences(MainActivity.varGlobal, MODE_PRIVATE);
         usuario = sharedPreferences.getString("usuario", "");
 
 
+=======
+>>>>>>> 69a165b919189b08b045645f5f1144351088c78a
         menu(0);
         llamadaFragment();
         configuracionesGlobales();
@@ -52,6 +62,7 @@ private String usuario;
 
             sacarFragment();
 
+<<<<<<< HEAD
 
 
         FragmentManager fm = getSupportFragmentManager();
@@ -59,6 +70,11 @@ private String usuario;
 
         ft.add(R.id.IDFragmentAdd, new listEvaluacion(),"2" );
 
+=======
+        FragmentManager fm = getSupportFragmentManager();
+        FragmentTransaction ft = fm.beginTransaction();
+        ft.add(R.id.IDFragmentAdd, new listEvaluacion(),"2" );
+>>>>>>> 69a165b919189b08b045645f5f1144351088c78a
         ft.commit();
 
     }

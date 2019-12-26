@@ -1,6 +1,7 @@
 package com.example.gymfitness;
 
 
+<<<<<<< HEAD
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -10,6 +11,12 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.text.Editable;
 import android.text.TextWatcher;
+=======
+import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
+>>>>>>> 69a165b919189b08b045645f5f1144351088c78a
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,6 +24,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
+<<<<<<< HEAD
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
@@ -28,18 +36,25 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
+=======
+>>>>>>> 69a165b919189b08b045645f5f1144351088c78a
 
 
 /**
  * A simple {@link Fragment} subclass.
  */
 public class listEvaluacion extends Fragment {
+<<<<<<< HEAD
     private RequestQueue requestQueQue;
     private String url;
     private  ListView list;
     private String usuario;
     private String fecha,peso,estatura,medidaCintura,imc,indiceGrasa,grasaInstrumento;
     private ArrayAdapter arrayAdapter;
+=======
+
+
+>>>>>>> 69a165b919189b08b045645f5f1144351088c78a
     public listEvaluacion() {
         // Required empty public constructor
     }
@@ -49,6 +64,7 @@ public class listEvaluacion extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view =inflater.inflate(R.layout.fragment_list_evaluacion, container, false);
+<<<<<<< HEAD
         list = (ListView)view.findViewById(R.id.ListViewEliminar);
         requestQueQue = Volley.newRequestQueue(view.getContext());
         SharedPreferences sharedPreferences = getActivity().getSharedPreferences(MainActivity.varGlobal, getActivity().MODE_PRIVATE);
@@ -91,11 +107,30 @@ public class listEvaluacion extends Fragment {
                 intent.putExtra("indiceGrasa",indiceGrasa);
                 intent.putExtra("grasaInstrumento",grasaInstrumento);
                 startActivity(intent);
+=======
+        //Este codigo es para mostrar el uso de la app, luego sera sacado
+        ListView list = (ListView)view.findViewById(R.id.ListViewEliminar);
+        String user[] = {"User1","User2","User3"};
+        ArrayAdapter<String> adaptador;
+        adaptador = new ArrayAdapter<String>(view.getContext(),android.R.layout.simple_list_item_1,user);
+        list.setAdapter(adaptador);
+        list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Fragment fragment2 = new visualizarEvaluacion();
+                FragmentManager miManejador = getFragmentManager();
+                FragmentTransaction miTransaccion  = miManejador.beginTransaction();
+
+                miTransaccion.replace(R.id.IDFragmentAdd,fragment2,"1");
+
+                miTransaccion.commit();
+>>>>>>> 69a165b919189b08b045645f5f1144351088c78a
             }
         });
 
         return view;
     }
+<<<<<<< HEAD
     private void cargarDatos(final View view,String usuario){
 
         requestQueQue = Volley.newRequestQueue(view.getContext());
@@ -142,4 +177,7 @@ public class listEvaluacion extends Fragment {
         requestQueQue.add(jsonObjectRequest);
 
     }
+=======
+
+>>>>>>> 69a165b919189b08b045645f5f1144351088c78a
 }

@@ -16,13 +16,21 @@
         <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" android:layout_margin="16dp"
+<<<<<<< HEAD
                 android:background="@drawable/redondear" android:id="@+id/LayoutDate" android:focusable="false">
+=======
+                android:background="@drawable/redondear" android:id="@+id/LayoutDate" android:focusable="False">
+>>>>>>> 69a165b919189b08b045645f5f1144351088c78a
 
             <android.support.design.widget.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/fechaNacimiento" android:textColor="@color/primaryText"
+<<<<<<< HEAD
                     android:id="@+id/inputFechaNacimiento" android:inputType="date" android:focusable="false"
+=======
+                    android:id="@+id/inputFechaNacimiento" android:inputType="date" android:focusable="False"
+>>>>>>> 69a165b919189b08b045645f5f1144351088c78a
                     android:imeOptions="actionNext"/>
         </android.support.design.widget.TextInputLayout>
         <TextView
@@ -58,6 +66,18 @@
                 app:layout_constraintVertical_bias="0.01999998"
                 android:contentDescription="@string/descripcionSeparador"
                 android:layout_gravity="center_horizontal" android:layout_marginTop="16dp"/>
+<<<<<<< HEAD
+=======
+        <TextView
+                android:text="@string/estatura"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/textView8" android:gravity="center_horizontal"
+                android:textColor="@color/secondaryText" android:fontFamily="@font/roboto"/>
+        <NumberPicker android:layout_width="match_parent" android:layout_height="96dp"
+                      android:id="@+id/picker" android:layout_margin="16dp" android:background="@drawable/redondear">
+
+        </NumberPicker>
+>>>>>>> 69a165b919189b08b045645f5f1144351088c78a
         <Button
                 android:text="@string/aceptar"
                 android:layout_width="match_parent"

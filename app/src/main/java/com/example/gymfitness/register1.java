@@ -62,6 +62,7 @@ public class register1 extends Fragment {
                     password.setError("Las contraseñas ingresadas no coinciden.");
                 }
                 else{
+<<<<<<< HEAD
                         String usuario = user.getText().toString();
                         if(consultaSQL(usuario)>0){
                             Toast.makeText(getContext(),"Este nombre de usuario ya esta en uso.",Toast.LENGTH_SHORT).show();
@@ -80,6 +81,19 @@ public class register1 extends Fragment {
                             FragmentManager miManejador = getFragmentManager();
                             FragmentTransaction miTransaccion  = miManejador.beginTransaction();
                             miTransaccion.replace(R.id.idFragmentModifica,fragment2);
+=======
+
+                        if(consultaSQL(user.getText().toString())>0){
+                            Toast.makeText(getContext(),"Este nombre de usuario ya esta en uso.",Toast.LENGTH_SHORT).show();
+                        }
+                        else{
+                            Fragment fragment2 = new register2();
+                            FragmentManager miManejador = getFragmentManager();
+                            FragmentTransaction miTransaccion  = miManejador.beginTransaction();
+
+                            miTransaccion.replace(R.id.idFragmentModifica,fragment2);
+
+>>>>>>> 69a165b919189b08b045645f5f1144351088c78a
                             miTransaccion.commit();
                         }
 

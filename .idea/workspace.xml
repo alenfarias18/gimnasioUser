@@ -2,6 +2,7 @@
 <project version="4">
   <component name="AndroidLayouts">
     <shared>
+<<<<<<< HEAD
       <config>
         <device id="pixel_2" />
       </config>
@@ -9,6 +10,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb38befd-d4b2-496a-affc-ae67841a0923" name="Default Changelist" comment="" />
+=======
+      <config />
+    </shared>
+  </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="cb38befd-d4b2-496a-affc-ae67841a0923" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/gymfitness/configuracionDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/gymfitness/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/gymfitness/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/gymfitness/dbHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/gymfitness/dbHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/gymfitness/register1.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/gymfitness/register1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/gymfitness/register2.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/gymfitness/register2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/gymfitness/register3.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/gymfitness/register3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/gymfitness/registro.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/gymfitness/registro.java" afterDir="false" />
+    </list>
+>>>>>>> 69a165b919189b08b045645f5f1144351088c78a
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,12 +71,17 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+<<<<<<< HEAD
+=======
+        <option value="Interface" />
+>>>>>>> 69a165b919189b08b045645f5f1144351088c78a
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+<<<<<<< HEAD
   <component name="ProjectId" id="1SkNbkVd5vQbjUtO3MNuWi4gOjN" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
@@ -72,6 +102,17 @@
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.example.gymfitness" />
     </key>
+=======
+  <component name="ProjectId" id="1Seg024F4SPqe7ThUbKEb01yjnX" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="device.picker.selection" value="127.0.0.1:62001" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+>>>>>>> 69a165b919189b08b045645f5f1144351088c78a
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -130,10 +171,17 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="cb38befd-d4b2-496a-affc-ae67841a0923" name="Default Changelist" comment="" />
+<<<<<<< HEAD
       <created>1572103707929</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1572103707929</updated>
+=======
+      <created>1571929248193</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1571929248193</updated>
+>>>>>>> 69a165b919189b08b045645f5f1144351088c78a
     </task>
     <servers />
   </component>

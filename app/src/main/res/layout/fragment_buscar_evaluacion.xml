@@ -53,8 +53,11 @@
                 app:layout_constraintHorizontal_bias="0.0" android:layout_marginTop="16dp"
                 app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" app:layout_constraintVertical_bias="0.0"
         />
+<<<<<<< HEAD
         <ListView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" android:id="@+id/ListViewEliminar2"/>
+=======
+>>>>>>> 69a165b919189b08b045645f5f1144351088c78a
     </LinearLayout>
 </FrameLayout>
