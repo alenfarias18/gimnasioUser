@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">gymfitness</string>
+    <string name="usuario">Usuario</string>
+    <string name="password">Contraseña</string>
+    <string name="iniciarSesion">Iniciar sesión</string>
+    <string name="titutlo">GYM</string>
+    <string name="subTitulo">Fitness club</string>
+    <string name="descripcionSeparador">Barra separadora</string>
+    <string name="crearCuent">¿No tienes una cuenta?</string>
+    <string name="iniciarCuenta">¿Ya tienes una cuenta?</string>
+    <string name="iniciar">Inicia sesión</string>
+    <string name="registrate">Regístrate.</string>
+    <string name="password2">Contraseña nuevamente</string>
+    <string name="personAdd">Nuevo Usuario</string>
+    <string name="siguiente">siguiente</string>
+    <string name="nombre">Nombre</string>
+    <string name="apellidop">Apellido Paterno</string>
+    <string name="apellidom">Apellido Materno</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="fechaNacimiento">Fecha de nacimiento</string>
+    <string name="estatura">Estatura(cm)</string>
+    <string name="onlyText">abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+    <string name="add">add</string>
+    <string name="search">search</string>
+    <string name="delete">delete</string>
+    <string name="fecha">Fecha</string>
+    <string name="peso">Peso(kg)</string>
+    <string name="medidacintura">Medida cintura(cm)</string>
+    <string name="agregar">Agregar</string>
+    <string name="imc">IMC</string>
+    <string name="indice">Indice de grasa corporal(%)</string>
+    <string name="sexo">Sexo</string>
+    <string name="masculino">Masculino</string>
+    <string name="femenino">Femenino</string>
+    <string name="buscar">Buscar</string>
+    <string name="grasa">% Grasa instrumento</string>
+    <string name="desde">Desde</string>
+    <string name="hasta">Hasta</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_vizualizar_eva">vizualizarEva</string>
+</resources>
